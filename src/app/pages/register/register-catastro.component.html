@@ -1,15 +1,22 @@
 <p-fluid>
     <form [formGroup]="form">
-        <h1 class="text-3xl font-bold mb-8">Seleccione la Actividad y/o Modalidad Turística; clasificación y categoría de ser el caso</h1>
-            <div class="grid grid-cols-12 gap-6">
-                <div class="col-span-4 flex flex-col gap-2">
-                    <label>Zona Geografica</label>
-                    <p-select  optionLabel="label" placeholder="Seleccione una opción"/>
-                </div>
-                <div class="col-span-4 flex flex-col gap-2">
-                    <label for="activity">Actividad</label>
-                    <p-select  optionLabel="label" formControlName="activity" placeholder="Seleccione una opción"/>
-                </div>
+        <h1 class="text-3xl font-bold mb-8">Seleccione la Actividad y/o Modalidad Turística; clasificación y categoría
+            de ser el caso</h1>
+        <div class="grid grid-cols-12 gap-6">
+            <div class="col-span-4 flex flex-col gap-2">
+                <label>Zona Geografica</label>
+                <p-select optionLabel="label" placeholder="Continente" [disabled]="true" />
             </div>
+
+            <div class="col-span-4 flex flex-col gap-2">
+                <label for="activity">Actividad</label>
+                <p-select optionLabel="label" formControlName="activity" placeholder="Seleccione una opción" />
+            </div>
+
+            <div class="col-span-4 flex flex-col gap-2">
+                <label for="activity">Actividad</label>
+                <p-select optionLabel="label" formControlName="activity" placeholder="Seleccione una opción" />
+            </div>
+        </div>
     </form>
 </p-fluid>
